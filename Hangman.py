@@ -90,52 +90,28 @@ def draw_hangman(window, chances):
 
     black = (0, 0, 0)
 
-    if chances == 6:
-        # Gallows
-        pygame.draw.line(window, black, (150, 100), (250, 100), 3)  # Top
-        pygame.draw.line(window, black, (250, 100), (250, 150), 3)  # Rope
-        pygame.draw.line(window, black, (150, 100), (150, 310), 3)  # Trunk
-        pygame.draw.line(window, black, (150, 310), (200, 310), 3)  # Base
-    elif chances == 5:
-        # Gallows
-        pygame.draw.line(window, black, (150, 100), (250, 100), 3)  # Top
-        pygame.draw.line(window, black, (250, 100), (250, 150), 3)  # Rope
-        pygame.draw.line(window, black, (150, 100), (150, 310), 3)  # Trunk
-        pygame.draw.line(window, black, (150, 310), (200, 310), 3)  # Base
+    # Gallows
+    pygame.draw.line(window, black, (150, 100), (250, 100), 3)  # Top
+    pygame.draw.line(window, black, (250, 100), (250, 150), 3)  # Rope
+    pygame.draw.line(window, black, (150, 100), (150, 310), 3)  # Trunk
+    pygame.draw.line(window, black, (150, 310), (200, 310), 3)  # Base
 
+    if chances == 5:
         # Man
         pygame.draw.circle(window, black, (250, 170), 20, 2)  # Head
 
     elif chances == 4:
-        # Gallows
-        pygame.draw.line(window, black, (150, 100), (250, 100), 3)  # Top
-        pygame.draw.line(window, black, (250, 100), (250, 150), 3)  # Rope
-        pygame.draw.line(window, black, (150, 100), (150, 310), 3)  # Trunk
-        pygame.draw.line(window, black, (150, 310), (200, 310), 3)  # Base
-
         # Man
         pygame.draw.circle(window, black, (250, 170), 20, 2)  # Head
         pygame.draw.line(window, black, (250, 190), (250, 240), 2)  # Body
 
     elif chances == 3:
-        # Gallows
-        pygame.draw.line(window, black, (150, 100), (250, 100), 3)  # Top
-        pygame.draw.line(window, black, (250, 100), (250, 150), 3)  # Rope
-        pygame.draw.line(window, black, (150, 100), (150, 310), 3)  # Trunk
-        pygame.draw.line(window, black, (150, 310), (200, 310), 3)  # Base
-
         # Man
         pygame.draw.circle(window, black, (250, 170), 20, 2)  # Head
         pygame.draw.line(window, black, (250, 190), (250, 240), 2)  # Body
         pygame.draw.line(window, black, (250, 195), (240, 240), 2)  # Left Arm
 
     elif chances == 2:
-        # Gallows
-        pygame.draw.line(window, black, (150, 100), (250, 100), 3)  # Top
-        pygame.draw.line(window, black, (250, 100), (250, 150), 3)  # Rope
-        pygame.draw.line(window, black, (150, 100), (150, 310), 3)  # Trunk
-        pygame.draw.line(window, black, (150, 310), (200, 310), 3)  # Base
-
         # Man
         pygame.draw.circle(window, black, (250, 170), 20, 2)  # Head
         pygame.draw.line(window, black, (250, 190), (250, 240), 2)  # Body
@@ -143,12 +119,6 @@ def draw_hangman(window, chances):
         pygame.draw.line(window, black, (250, 195), (260, 240), 2)  # Right Arm
 
     elif chances == 1:
-        # Gallows
-        pygame.draw.line(window, black, (150, 100), (250, 100), 3)  # Top
-        pygame.draw.line(window, black, (250, 100), (250, 150), 3)  # Rope
-        pygame.draw.line(window, black, (150, 100), (150, 310), 3)  # Trunk
-        pygame.draw.line(window, black, (150, 310), (200, 310), 3)  # Base
-
         # Man
         pygame.draw.circle(window, black, (250, 170), 20, 2)  # Head
         pygame.draw.line(window, black, (250, 190), (250, 240), 2)  # Body
@@ -157,12 +127,6 @@ def draw_hangman(window, chances):
         pygame.draw.line(window, black, (250, 240), (240, 280), 2)  # Left Leg
 
     else:
-        # Gallows
-        pygame.draw.line(window, black, (150, 100), (250, 100), 3)  # Top
-        pygame.draw.line(window, black, (250, 100), (250, 150), 3)  # Rope
-        pygame.draw.line(window, black, (150, 100), (150, 310), 3)  # Trunk
-        pygame.draw.line(window, black, (150, 310), (200, 310), 3)  # Base
-
         # Man
         pygame.draw.circle(window, black, (250, 170), 20, 2)  # Head
         pygame.draw.line(window, black, (250, 190), (250, 240), 2)  # Body
